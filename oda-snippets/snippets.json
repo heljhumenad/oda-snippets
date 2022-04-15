@@ -1,0 +1,70 @@
+{
+	"_comment": "Snippets of all System Component of Oracle Digital Assistant Dialog Flow",
+
+	"oda-crc-with-card": {
+		"prefix": "crc-card",
+		"body": [
+			"  $1:",
+			"    component: \"System.CommonResponse\"",
+			"    properties:",
+			"      processUserMessage: true",
+			"      metadata:",
+			"        responseItems:",
+			"        - type: \"text\"",
+			"          text: \"$2\"",
+			"          separateBubbles: \"$3\"",
+			"        - type: \"cards\"",
+			"          cardLayout: \"horizontal\"",
+			"          name: \"$4\"",
+			"          cards:",
+			"            - title: \"$5\"",
+			"              description: \"$6\"",
+			"              name: \"$7\"",
+			"              iteratorVariable: \"$8\"",
+			"              actions:",
+			"                - labels: \"$9\"",
+			"                  type: \"postback\"",
+			"                  payload:",
+			"                    action: \"$10\"",
+			"    transitions:",
+			"      actions:",
+			"        \"$11\": \"$12\"",
+			"      "
+		],
+		"description": "System Common Response Component with card"
+	},
+	"oda-crc-use-text": {
+		"prefix": "crc-text",
+		"body": [
+			"  $1:",
+			"    component: \"System.CommonResponse\"",
+			"    properties:",
+			"      processUserMessage: \"$2\"",
+			"      keepTurn: \"$3\"",
+			"      metadata:",
+			"        responseItems:",
+			"        - type: \"text\"",
+			"          text: \"$4\"",
+			"          separateBubbles: \"$3\"",
+			"    transitions:",
+			"      actions:",
+			"        \"$4\": \"$5\""
+		],
+		"description": "System Common Response Component use to output text"
+	},
+
+	"oda-system-output": {
+		"prefix": "system-output",
+		"body": [
+		  "  $1:",
+		  "    component: \"System.Output\"",
+		  "    properties:",
+		  "      text: \"$2\"",
+		  "      keepTurn: \"$3\"",
+		  "    transitions:",
+		  "      next: \"$4\""
+		],
+		"description": "System.Output that use for print of text"
+	  }
+
+}
