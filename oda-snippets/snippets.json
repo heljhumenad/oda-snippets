@@ -1,7 +1,7 @@
 {
   "_comment": "Snippets of all System Component of Oracle Digital Assistant Dialog Flow",
-  "oda-crc-with-card": {
-    "prefix": "crc-card",
+  "System Common Response Component with card": {
+    "prefix": "oda-crc-with-card",
     "body": [
       "  $1:",
       "    component: \"System.CommonResponse\"",
@@ -32,8 +32,8 @@
     ],
     "description": "System Common Response Component with card"
   },
-  "oda-crc-use-text": {
-    "prefix": "crc-text",
+  "System Common Response Component use to output text": {
+    "prefix": "oda-crc-use-text",
     "body": [
       "  $1:",
       "    component: \"System.CommonResponse\"",
@@ -51,21 +51,8 @@
     ],
     "description": "System Common Response Component use to output text"
   },
-  "oda-system-output": {
-    "prefix": "system-output",
-    "body": [
-      "  $1:",
-      "    component: \"System.Output\"",
-      "    properties:",
-      "      text: \"$2\"",
-      "      keepTurn: \"$3\"",
-      "    transitions:",
-      "      next: \"$4\""
-    ],
-    "description": "System.Output that use for print of text"
-  },
-  "oda-cpyvar": {
-    "prefix": "system-copyvar",
+  "System.CopyVariables that use to copy variables from context": {
+    "prefix": "oda-cpyvar",
     "body": [
       "  $1:",
       "    component: \"System.CopyVariables\"",
@@ -75,8 +62,8 @@
     ],
     "description": "System.CopyVariables that use to copy variables from context"
   },
-  "oda-reset-var": {
-    "prefix": "system-resetvariables",
+  "System.ResetVariables that use to reset variables that declare on the context": {
+    "prefix": "oda-reset-var",
     "body": [
       "  $1:",
       "    component: \"System.ResetVariables\"",
@@ -87,8 +74,8 @@
     ],
     "description": "System.ResetVariables that use to reset variables that declare on the context"
   },
-  "oda-set-var": {
-    "prefix": "system-setvariables",
+  "System.SetVariables that use of setting the value on the context variable": {
+    "prefix": "oda-set-var",
     "body": [
       "  $1:",
       "    component: \"System.SetVariable\"",
@@ -99,5 +86,52 @@
       "      next: \"$5\""
     ],
     "descriptiion": "System.SetVariables that use of setting the value on the context variable"
+  },
+  "This component  alters the navigation based on the variable value": {
+    "prefix": "oda-system-condequals",
+    "body": [
+      "  $1:",
+      "    component: \"System.ConditionEquals\"",
+      "    properties:",
+      "      variable: \"$2\"",
+      "      value: \"$3\"",
+      "    transitions:",
+      "      actions:",
+      "        equal: \"$4\"",
+      "        notequal: \"$5\""
+    ],
+    "description": "This component  alters the navigation based on the variable value"
+  },
+  "This component check for the existence of specified variable": {
+    "prefix": "oda-system-conditionexists",
+    "body": [
+      "  $1:",
+      "    component: \"System.ConditionExists\"",
+      "    properties:",
+      "      variable: \"$2\"",
+      "    transitions:",
+      "      actions:",
+      "        exists: \"$4\"",
+      "        notexists: \"$5\""
+    ],
+    "description": "This component check for the existence of specified variable"
+  },
+  "This component switch states based on a variable value": {
+    "prefix": "oda-system-switch",
+    "body": [
+      "  $1:",
+      "    component: \"System.Switch\"",
+      "    properties:",
+      "      variable: \"$2\"",
+      "      value: ",
+      "      - \"$3\"",
+      "      - \"$4\"",
+      "    transitions:",
+      "      actions:",
+      "        NONE: \"$5\"",
+      "        $6: \"$7\"",
+      "        $8: \"$9\""
+    ],
+    "description": "This component switch states based on a variable value"
   }
 }
