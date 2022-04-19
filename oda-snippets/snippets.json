@@ -133,5 +133,18 @@
       "        $8: \"$9\""
     ],
     "description": "This component switch states based on a variable value"
+  },
+  "This component enables your bot to set a context or user variable by asking the user to enter some text": {
+    "prefix": "oda-system-text",
+    "body": [
+      "$1:",
+      "  component: \"System.Text\"",
+      "  properties:",
+      "    prompt: \"$2\"",
+      "    variable: \"$3\"",
+      "  transitions:",
+      "    next: \"$4\""
+    ],
+    "description": "This component enables your bot to set a context or user variable by asking the user to enter some text"
   }
 }

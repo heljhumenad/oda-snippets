@@ -1,6 +1,7 @@
 {
   "name": "oda-snippets",
   "version": "1.0.0",
+  "publisher": "HeljhumEnad",
   "description": "VSCode Snippets that feature Oracle Digital Assistant Dialog Flow System Component",
   "engines": {
     "vscode": "^1.28.0"
@@ -29,5 +30,6 @@
   "bugs": {
     "url": "https://github.com/heljhumenad/oda-snippets/issues"
   },
-  "homepage": "https://github.com/heljhumenad/oda-snippets#readme"
+  "homepage": "https://github.com/heljhumenad/oda-snippets#readme",
+  ""
 }
