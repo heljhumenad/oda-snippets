@@ -146,5 +146,23 @@
       "    next: \"$4\""
     ],
     "description": "This component enables your bot to set a context or user variable by asking the user to enter some text"
+  },
+  "The component opens a webview within your skill, or for skills that run in a web channel, in a browser tab": {
+    "prefix": "oda-system-webview",
+    "body": [
+      " $1:",
+      "   component: \"System.Webview\"",
+      "   properties:",
+      "      sourceVariableList: \"$2,$3,$4\"",
+      "      variable: \"$5\"",
+      "      prompt: \"$6\"",
+      "      service: \"$7\"",
+      "      imageUrl: \"$8\"",
+      "      linkLabel: \"$9\"",
+      "      cancelLabel: \"$10\"",
+      "    transitions:",
+      "      next: \"$11\"     "
+    ],
+    "description": "The component opens a webview within your skill, or for skills that run in a web channel, in a browser tab"
   }
 }
