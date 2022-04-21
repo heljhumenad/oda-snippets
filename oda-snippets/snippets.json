@@ -164,5 +164,24 @@
       "      next: \"$11\"     "
     ],
     "description": "The component opens a webview within your skill, or for skills that run in a web channel, in a browser tab"
+  },
+  "Iterates through all the entity fields in the composite bag, converse with the user and resolves all the fields": {
+    "prefix": "oda-system-resolveEntities",
+    "body": [
+      "  $1:",
+      "    components: \"System.ResolveEntities",
+      "     properties:",
+      "        variable: \"$2\"",
+      "        nlpResultVariable: \"$3\"",
+      "        maxPrompts: \"$4\"",
+      "        useFullyEntityMatches: \"$5\"",
+      "        transitionAfterMatch: \"$6\"",
+      "        cancelPolicy: \"$7\"",
+      "      transitions:",
+      "        actions:",
+      "          $8: \"$9\"",
+      ""
+    ],
+    "description": "Iterates through all the entity fields in the composite bag, converse with the user and resolves all the fields"
   }
 }
