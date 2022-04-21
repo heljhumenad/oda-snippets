@@ -183,5 +183,56 @@
       ""
     ],
     "description": "Iterates through all the entity fields in the composite bag, converse with the user and resolves all the fields"
+  },
+  "This component use to access an Oracle Intelligent Advisor interview from a skill": {
+    "prefix": "oda-system-intel-advisor",
+    "body": [
+      "  $1:",
+      "    component: \"System.IntelligentAdvisor\"",
+      "    properties:",
+      "      intelligentAdvisorService: \"$2\"",
+      "      deployment: \"$3\"",
+      "      uncertainLabel: \"$4\"",
+      "      endLabel: \"$5\"",
+      "    transitions:",
+      "      error: \"$6\"",
+      "      next:",
+      "        \"$7\""
+    ],
+    "description": "This component use to access an Oracle Intelligent Advisor interview from a skill"
+  },
+  "This component use in DA-as-agent digital assistant to transfer the converstation back to the chat service": {
+    "prefix": "oda-system-agent-transfer",
+    "body": [
+      "  $1:",
+      "    component: \"System.AgentTransfer\"",
+      "    properties:",
+      "      maxEngagementsInQueue: \"$2\"",
+      "      waitSeconds: \"$3\"",
+      "      waitingMessage: \"$4\"",
+      "      rejectedMessage: \"$5\"",
+      "      errorMessage: \"$6\"",
+      "    transitions:",
+      "      actions:",
+      "        accepted: \"$7\"",
+      "        rejected: \"$8\"",
+      "      next: ",
+      "        $9: \"$10\""
+    ],
+    "description": "This component use in DA-as-agent digital assistant to transfer the converstation back to the chat service"
+  },
+  "This component detecst the user intent and extracts all of the entities and then trigger a subsequent state": {
+    "prefix": "oda-system-intent",
+    "body": [
+      "  $1:",
+      "    component: \"System.Intent\"",
+      "    properties:",
+      "      variable: \"$2\"",
+      "    transitions:",
+      "      actions:",
+      "        $3: \"$4\"",
+      "        $5: \"$6\""
+    ],
+    "description": "This component detecst the user intent and extracts all of the entities and then trigger a subsequent state"
   }
 }
