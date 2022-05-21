@@ -10,7 +10,11 @@
   "categories": [
     "Snippets"
   ],
-  "icons": "images/robot.png",
+  "icons": "./image/robot.png",
+  "galleryBanner": {
+    "color": "##fff5ee",
+    "theme": "dark"
+  },
   "contributes": {
     "snippets": [
       {
