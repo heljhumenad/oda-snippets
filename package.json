@@ -1,6 +1,6 @@
 {
   "name": "oda-snippets",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "publisher": "HeljhumEnad",
   "displayName": "Oracle Digital Assistant Snippets",
   "description": "VSCode Snippets that feature Oracle Digital Assistant Dialog Flow System Component",
@@ -10,7 +10,11 @@
   "categories": [
     "Snippets"
   ],
-  "icons": "images/robot.png",
+  "icons": "./image/robot.png",
+  "galleryBanner": {
+    "color": "##fff5ee",
+    "theme": "dark"
+  },
   "contributes": {
     "snippets": [
       {
