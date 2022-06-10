@@ -11,10 +11,6 @@
     "Snippets"
   ],
   "icons": "./image/robot.png",
-  "galleryBanner": {
-    "color": "##fff5ee",
-    "theme": "dark"
-  },
   "contributes": {
     "snippets": [
       {
