@@ -11,7 +11,6 @@
       "        responseItems:",
       "        - type: \"text\"",
       "          text: \"$2\"",
-      "          separateBubbles: \"$3\"",
       "        - type: \"cards\"",
       "          cardLayout: \"horizontal\"",
       "          name: \"$4\"",
@@ -44,7 +43,6 @@
       "        responseItems:",
       "        - type: \"text\"",
       "          text: \"$4\"",
-      "          separateBubbles: \"$3\"",
       "    transitions:",
       "      actions:",
       "        \"$4\": \"$5\""
@@ -88,7 +86,7 @@
     "descriptiion": "System.SetVariables that use of setting the value on the context variable"
   },
   "This component  alters the navigation based on the variable value": {
-    "prefix": "oda-system-condequals",
+    "prefix": "oda-condequals",
     "body": [
       "  $1:",
       "    component: \"System.ConditionEquals\"",
@@ -103,7 +101,7 @@
     "description": "This component  alters the navigation based on the variable value"
   },
   "This component check for the existence of specified variable": {
-    "prefix": "oda-system-conditionexists",
+    "prefix": "oda-condexist",
     "body": [
       "  $1:",
       "    component: \"System.ConditionExists\"",
@@ -117,7 +115,7 @@
     "description": "This component check for the existence of specified variable"
   },
   "This component switch states based on a variable value": {
-    "prefix": "oda-system-switch",
+    "prefix": "oda-switch",
     "body": [
       "  $1:",
       "    component: \"System.Switch\"",
@@ -135,7 +133,7 @@
     "description": "This component switch states based on a variable value"
   },
   "This component enables your bot to set a context or user variable by asking the user to enter some text": {
-    "prefix": "oda-system-text",
+    "prefix": "oda-text",
     "body": [
       "$1:",
       "  component: \"System.Text\"",
@@ -148,7 +146,7 @@
     "description": "This component enables your bot to set a context or user variable by asking the user to enter some text"
   },
   "The component opens a webview within your skill, or for skills that run in a web channel, in a browser tab": {
-    "prefix": "oda-system-webview",
+    "prefix": "oda-webview",
     "body": [
       " $1:",
       "   component: \"System.Webview\"",
@@ -166,7 +164,7 @@
     "description": "The component opens a webview within your skill, or for skills that run in a web channel, in a browser tab"
   },
   "Iterates through all the entity fields in the composite bag, converse with the user and resolves all the fields": {
-    "prefix": "oda-system-resolveEntities",
+    "prefix": "oda-resolveEntities",
     "body": [
       "  $1:",
       "    components: \"System.ResolveEntities",
@@ -185,7 +183,7 @@
     "description": "Iterates through all the entity fields in the composite bag, converse with the user and resolves all the fields"
   },
   "This component use to access an Oracle Intelligent Advisor interview from a skill": {
-    "prefix": "oda-system-intel-advisor",
+    "prefix": "oda-intel-advisor",
     "body": [
       "  $1:",
       "    component: \"System.IntelligentAdvisor\"",
@@ -202,7 +200,7 @@
     "description": "This component use to access an Oracle Intelligent Advisor interview from a skill"
   },
   "This component use in DA-as-agent digital assistant to transfer the converstation back to the chat service": {
-    "prefix": "oda-system-agent-transfer",
+    "prefix": "oda-agent-transfer",
     "body": [
       "  $1:",
       "    component: \"System.AgentTransfer\"",
@@ -222,7 +220,7 @@
     "description": "This component use in DA-as-agent digital assistant to transfer the converstation back to the chat service"
   },
   "This component detecst the user intent and extracts all of the entities and then trigger a subsequent state": {
-    "prefix": "oda-system-intent",
+    "prefix": "oda-intent",
     "body": [
       "  $1:",
       "    component: \"System.Intent\"",
